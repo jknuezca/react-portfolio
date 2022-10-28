@@ -11,6 +11,12 @@ import ojt from "../../Assets/Projects/ojt_.jpg";
 import ojtfull from "../../Assets/Projects/ojtfull.png";
 import bitpal from "../../Assets/Projects/bitpal.jpg";
 import bitpalfull from "../../Assets/Projects/bitpalfull.png";
+import brookline from "../../Assets/Projects/brookline.png";
+import cfourroofing from "../../Assets/Projects/cfourroofing.png";
+import cfourroofingfull from "../../Assets/Projects/cfourroofingfull.png";
+import sbmwt from "../../Assets/Projects/sbmwt.png";
+import sbmwtfull from "../../Assets/Projects/sbmwtfull.png";
+import capcity from "../../Assets/Projects/capcity.png";
 
 function Projects() {
   return (
@@ -24,24 +30,42 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ddsgroup}
+              imgPath={capcity}
               isBlog={false}
-              title="DDS Group"
-              description="Created a website for DDS Group which consists a team of young professionals providing design, drafting and architectural services to home owners, residential contractors, commercial contractors and municipalities who are looking to develop unique and modern homes, buildings or structures."
-              link="https://designdraftingservicesgroup.com"
+              title="Cap City Danbury"
+              description="Cap City, Inc. offers high quality products at very competitive prices. This website was built using WordPress Custom Theme."
+              link="https://capcitydanbury.com/"
             />
           </Col>
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={pioneer}
-              isBlog={false}
-              title="Pioneer Realty"
-              description="This website was created using WordPress and originally there was a PHP search function that I made for the property featured listings which was working. But now it was replaced by the client for some reason. "
-              link="https://pioneerrealty.com/"
-            />
-          </Col>
+              <ProjectCard
+                imgPath={ddsgroup}
+                isBlog={false}
+                title="DDS Group"
+                description="Created a website for DDS Group which consists a team of young professionals providing design, drafting and architectural services to home owners, residential contractors, commercial contractors and municipalities who are looking to develop unique and modern homes, buildings or structures."
+                link="https://designdraftingservicesgroup.com"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={pioneer}
+                isBlog={false}
+                title="Pioneer Realty"
+                description="This website was created using WordPress and originally there was a PHP search function that I made for the property featured listings which was working. But now it was replaced by the client for some reason. "
+                link="https://pioneerrealty.com/"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={brookline}
+                isBlog={false}
+                title="Brookline Dental"
+                description="Brookline Dental team specializes in orthodontics, preventative and restorative care, pediatric dentistry, cosmetic services, and periodontal care, gum health maintenance, and dental implants."
+                link="https://www.brookline-dental.com/"
+              />
+            </Col>
         </Row>
       </Container>
       <Container>
@@ -64,6 +88,20 @@ function Projects() {
                 imgPath={bitpal}
                 imgFull={bitpalfull}
                 title="BitPal International"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <DesignCard
+                imgPath={cfourroofing}
+                imgFull={cfourroofingfull}
+                title="CFour Roofing"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <DesignCard
+                imgPath={sbmwt}
+                imgFull={sbmwtfull}
+                title="Shine Bright"
               />
             </Col>
           </Row>
